@@ -1,7 +1,7 @@
 //https://www.codewars.com/kata/57274562c8dcebe77e001012/train/javascript
 function cutIt(arr) {
  const minStrLength = (Math.min(...arr.map(str => str.length)));
- const myArr = arr.map(str => str.slice(0,minStrLength));
+ const myArr = arr.map(str => str.slice(0, minStrLength));
  return myArr;
 }
 _________________________________________________________________
@@ -16,6 +16,6 @@ function firstToLast(str,c) {
 _________________________________________________________________
 //https://www.codewars.com/kata/57280481e8118511f7000ffa/train/javascript
 function splitAndMerge(string, separator) {
-  let newArr =  string.split(" ");
+  let newArr = string.split(" ");
   return newArr.map(str => str.split("").join(separator)).join(" ");
 }
