@@ -25,7 +25,7 @@ function topSecret(str){
 		} else if (unicodeNumber >= 97 && unicodeNumber <= 99) {
 			letter = (newStr[i] = String.fromCharCode(unicodeNumber + 23));
 		
-		} else if (unicodeNumber === 32) { 
+		} else if (unicodeNumber === 32 || unicodeNumber === 33) { 
 			letter = (newStr[i] = String.fromCharCode(unicodeNumber));
 		} else {
 			letter = (newStr[i] = String.fromCharCode(unicodeNumber - 3));
@@ -34,11 +34,9 @@ function topSecret(str){
 	}
 	return encrypted.join('');
 }
-topSecret('Pb qdph lv Mrkq');
 _________________________________________________
 // //https://www.codewars.com/kata/5729b103dd8bac11a900119e
 function fiveLine(s){
 	const newStrValue = s.trim();
 	return(`${newStrValue.repeat(1)}\n${newStrValue.repeat(2)}\n${newStrValue.repeat(3)}\n${newStrValue.repeat(4)}\n${newStrValue.repeat(5)}`);
 }
-fiveLine('xy \n');
