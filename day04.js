@@ -11,41 +11,41 @@ function padIt(str, n) {
   }
   return str;
 }
-_______________________________________________________________________
+_______________________________________________________________________;
 //https://www.codewars.com/kata/5721a78c283129e416000999/train/javascript
 function pickIt(arr) {
-  let odd=[],even=[];
+  let odd = [],
+    even = [];
   for (let i = 0; i <= arr.length - 1; i++) {
-    if( arr[i] % 2 == 0) {
+    if (arr[i] % 2 == 0) {
       even.push(arr[i]);
     } else {
       odd.push(arr[i]);
     }
   }
-  return [odd,even];
+  return [odd, even];
 }
-______________________________________________________________________
+______________________________________________________________________;
 //https://www.codewars.com/kata/5721c189cdd71194c1000b9b/train/javascript
-function grabDoll(dolls){
-  let bag=[];
+function grabDoll(dolls) {
+  let bag = [];
   for (let i = 0; i < dolls.length; i++) {
     if (bag.length == 3) {
       break;
     }
-    if (dolls[i] == "Hello Kitty") { 
+    if (dolls[i] == "Hello Kitty") {
       bag.push(dolls[i]);
-    } else if(dolls[i] == "Barbie doll") {
+    } else if (dolls[i] == "Barbie doll") {
       bag.push(dolls[i]);
-    }
-    else {
+    } else {
       continue;
-    }  
+    }
   }
   return bag;
 }
-______________________________________________________________________
+______________________________________________________________________;
 //https://www.codewars.com/kata/5722b3f0bd5583cf44001000/solutions/javascript
-function giveMeFive(obj){
+function giveMeFive(obj) {
   //coding here
   let five = [];
   for (let key in obj) {
