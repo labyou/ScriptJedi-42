@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/5728203b7fc662a4c4000ef3/train/javascript
+//https://www.codewars.com/kata/5728203b7fc662a4c4000ef3/train/javascript
  function alienLanguage(str) {
    const splitedStr = str.split(" ");
    const newStr = [];
@@ -35,7 +35,7 @@ function topSecret(str){
 	return encrypted.join('');
 }
 _________________________________________________
-// //https://www.codewars.com/kata/5729b103dd8bac11a900119e
+//https://www.codewars.com/kata/5729b103dd8bac11a900119e
 function fiveLine(s){
 	const newStrValue = s.trim();
 	return(`${newStrValue.repeat(1)}\n${newStrValue.repeat(2)}\n${newStrValue.repeat(3)}\n${newStrValue.repeat(4)}\n${newStrValue.repeat(5)}`);
