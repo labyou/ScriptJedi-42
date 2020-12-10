@@ -39,4 +39,4 @@ _________________________________________________
 function fiveLine(s){
 	const newStrValue = s.trim();
 	return(`${newStrValue.repeat(1)}\n${newStrValue.repeat(2)}\n${newStrValue.repeat(3)}\n${newStrValue.repeat(4)}\n${newStrValue.repeat(5)}`);
-}
+} 
