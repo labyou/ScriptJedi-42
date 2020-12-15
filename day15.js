@@ -35,3 +35,16 @@ let threeInOne = arr => {
   } 
   return res;
 }
+//https://www.codewars.com/kata/5fd8aa5743b49e0012d43e50/train/javascript
+//ЗАДАЧА ЯКУ ВИ СКИНУЛИ В ДІСКОРД
+const loopArr = (arr, d, s) => {
+  const array = arr;
+  for(let i = 0; i < s; i++) { 
+    if (d === 'left') {
+      array.push(array.shift());
+    } else if (d === 'right') {
+      array.unshift(array.pop());
+    }
+  }
+  return array;
+}
