@@ -29,8 +29,8 @@ let infiniteLoop = (arr, d, n) => {
 let threeInOne = arr => {
   const array = [...arr];
   let res = [];
-  for (let i = 0; i < array.length; i++) {
-    let arraySliced = array.splice(0, 3).reduce((acc, val) => acc + val);
+  for (let i = 0; i < array.length; i += 3) {
+    let arraySliced = array.slice(i, i + 3).reduce((acc, val) => acc + val);
     res = [...res, arraySliced];
   } 
   return res;
