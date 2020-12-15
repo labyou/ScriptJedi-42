@@ -26,3 +26,12 @@ let infiniteLoop = (arr, d, n) => {
   return array;
 }
 //https://www.codewars.com/kata/572cb264362806af46000793/train/javascript
+let threeInOne = arr => {
+  const array = [...arr];
+  let res = [];
+  for (let i = 0; i < array.length; i++) {
+    let arraySliced = array.splice(0, 3).reduce((acc, val) => acc + val);
+    res = [...res, arraySliced];
+  } 
+  return res;
+}
