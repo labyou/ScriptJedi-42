@@ -21,4 +21,11 @@ const blackAndWhite = (arr) => {
     return "It's a white array";
   } else return "It's a fake array"; 
 }
-//
+//https://www.codewars.com/kata/array-number-reduce/train/javascript
+Array.prototype.reduce = function(process, initial) {
+  let acc = initial || this[0];
+  for(let i = initial ? 0 : 1; i < this.length; i++) {
+    acc = process(acc, this[i], this);
+  }
+  return acc;
+}
