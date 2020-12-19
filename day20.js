@@ -15,4 +15,4 @@ const findSimilarity = (str, word) => {
   return str.split(' ').filter(x => regexp.test(x)).join(' ');
 }
 //https://www.codewars.com/kata/573bca07dffc1aa693000139/train/javascript
-var regex=/^(\-9|9).*0{4,}$/
+var regex = /^(\-9|9).*0{4,}$/
