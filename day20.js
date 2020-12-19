@@ -6,4 +6,12 @@ const countAnimals = (animals,count) => {
   };
   return arrOfMatches;
 }
+//https://www.codewars.com/kata/573975d3ac3eec695b0013e0/train/javascript
+const findSimilarity = (str, word) => {
+  let regstr = word.replace(/./g,".")
+               .replace(/^./,word[0])
+               .replace(/.$/,word.slice(-1));
+  let regexp = new RegExp("^" + regstr + "$","i");
+  return str.split(' ').filter(x => regexp.test(x)).join(' ');
+}
 //
