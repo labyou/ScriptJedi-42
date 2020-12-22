@@ -5,4 +5,8 @@ const solution = (...arr) => {
     return false
   } else return true; 
 }
-//
+//https://www.codewars.com/kata/541629460b198da04e000bb9/train/javascript
+function last(list) {
+  let lastOfArg = arguments[arguments.length - 1];
+  return lastOfArg[lastOfArg.length - 1] || lastOfArg;
+}
