@@ -23,12 +23,12 @@ class Router {
     this.data = new Map();
   }  
   bind(url, method, func) {
-    this.data.set(url + ":" + method, func);
+    this.data.set(url + ':' + method, func);
   }
   runRequest(url, method) {
-    if (!this.data.has(url + ":" + method)) {
-      return "Error 404: Not Found";
+    if (!this.data.has(url + ':' + method)) {
+      return 'Error 404: Not Found';
     }
-      return this.data.get(url + ":" + method)();
+      return this.data.get(url + ':' + method)();
     }
 }
