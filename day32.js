@@ -13,8 +13,8 @@ class NamedOne {
   get fullName() { 
     return this.firstName + ' ' + this.lastName 
   }
-  set fullName(variable) 
+  set fullName(full) 
   { 
-    if (/ /.test(variable)) [this.firstName, this.lastName] = variable.split(' ') 
+    if (/ /.test(full)) [this.firstName, this.lastName] = full.split(' ') 
   }
 }
