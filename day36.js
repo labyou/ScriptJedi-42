@@ -320,8 +320,8 @@ describe('`Promise` API overview', function() {
 describe('`catch()` returns a Promise and deals with rejected cases only', () => {
   describe('prerequisites for understanding', () => {
     it('*return* a fulfilled promise, to pass a test', () => {
-      Promise.reject();
-      assert(true); // Don't touch! Make the test pass in the line above!
+      return Promise.resolve();
+      assert(false); // Don't touch! Make the test pass in the line above!
     });
     it('reminder: the test passes when a fulfilled promise is returned', () => {
       return Promise.resolve('I should fulfill.');
@@ -372,7 +372,7 @@ describe('`catch()` returns a Promise and deals with rejected cases only', () =>
       const p = Promise.reject('1');
       const p1 = p
           .catch(reason => { throw Error(`${reason} AND 2`) })
-          .catch(err => { return (`${err.message} AND 3`) })
+          .catch(err => { return `${err.message} AND 3` })
           .catch(err => `${err} but NOT THIS`)
         ;
       return p1.then(result =>
