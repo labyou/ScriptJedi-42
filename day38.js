@@ -148,7 +148,7 @@ class ConsumableUsers {
       return `user: ${this.users.shift()}`;
     }
     this.isEmpty = true;
-    return void 0;
+    return undefined;
   }
   get anyLeft() {
     return !this.isEmpty;
