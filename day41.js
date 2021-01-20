@@ -11,6 +11,6 @@ function* generator() {
 function* generator(n) {
   let i = 1;
   while (true) {
-    let v = yield `${n} x ${i} = ${n * i++}`;
+    let x = yield `${n} x ${i} = ${n * i++}`;
   }
 }
